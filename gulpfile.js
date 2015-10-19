@@ -43,14 +43,14 @@ gulp.task('build:sass',function(cb){
 });
 
 gulp.task('copy:html',function(cb){
-  return gulp.src('src/static/**/*.html')
+  return gulp.src('src/static/**/*.*')
     .pipe(gulp.dest('dist/html'),cb);
 });
 
 gulp.task('browser-sync', function(cb) {
     browserSync({
         server: {
-            baseDir: 'dist/'
+            baseDir: 'dist/html'
         }
     });
 });
