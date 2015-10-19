@@ -1,0 +1,17 @@
+{
+  "name": "study pixi",
+  "version": "0.0.0",
+  "homepage": "https://github.com/studio-kakky/study_of_pixijs",
+  "authors": [
+    "柿内暢昌 <nob@studio-kakky.com>"
+  ],
+  "license": "ISC",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "private":true
+}

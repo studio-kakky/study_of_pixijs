@@ -4,9 +4,10 @@
   "description": "pix.jsの勉強",
   "main": "gulpfile.js",
   "scripts": {
+    "postinstall": "bower install",
     "start": "gulp",
-    "test": "gulp test",
-    "build": "gulp build"
+    "build": "gulp build",
+    "develop": "gulp develop"
   },
   "author": "",
   "license": "ISC",
