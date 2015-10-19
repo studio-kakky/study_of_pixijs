@@ -26,7 +26,7 @@ gulp.task('build:lib',function(cb){
 });
 
 gulp.task('build:js',function(cb){
-  return gulp.src(['src/app/modeles/**/*.js','src/app/main/*.js'])
+  return gulp.src(['src/app/models/**/*.js','src/app/main/*.js'])
     .pipe(plumber({
       errorHandler: notify.onError("Error: <%= error.message %>")
     }))
