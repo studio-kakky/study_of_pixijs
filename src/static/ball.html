@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="js/lib.js"></script>
+<script type="text/javascript" src="js/all.js"></script>
+<link rel="stylesheet" href="css/styles.css">
+<title>hello world</title>
+</head>
+<body>
+<div class="px-canvas" id="px-canvas"></div>
+<script>
+var stage = new Stage(document.getElementById('px-canvas'));
+var ball = new Ball(300, 300, 10, {fillColor:0xff0000} );
+stage.addChild(ball);
+stage.autoRendering();
+ball.a = {x:0,y:3};
+setInterval( setAnimation,50);
+
+function setAnimation() {
+  if (ball.x < 0 + ball.r ) {
+    vall.x = ball.r;
+    ball.v = {x: -ball.v.x * 0.9, y: ball.v.y};
+  } else if(ball.x > stage.stageWidth - ball.r) {
+    vall.x = stage.stageWidth - ball.r;
+    ball.v = {x: -ball.v.x, y: ball.v.y};
+  }
+
+  if (ball.y < 0 + ball.r ) {
+    ball.y = ball.r;
+    ball.v = {x: ball.v.x, y: -ball.v.y};
+  } if (ball.y > stage.stageHeight - ball.r) {
+    ball.y = stage.stageHeight - ball.r;
+    ball.v = {x: ball.v.x, y: -ball.v.y * 0.7};
+  }
+}
+</script>
+</body>
+</html>
