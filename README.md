@@ -38,13 +38,15 @@ npm run build
 
 ### ビルド時に作成されるファイル
 
-dest -- html
-          |--- js
-          |     |--- all.js jsファイル
-          |     |--- lib.js 外部ライブラリ
-          |
-          |--- css
-          |     |-- styles.js
-          |
-          |--- index.js
-          |--- study1.html
+```
+dest - html
+        |- js
+        |  |- all.js jsファイル
+        |  |- lib.js 外部ライブラリ
+        |
+        |- css
+        |   |- styles.js
+        |
+        |- index.js
+        |- study1.html
+```
